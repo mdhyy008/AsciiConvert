@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:background="@drawable/s_up">
+
+		<ScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<EditText
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:hint="String"
+				android:gravity="top"
+				android:padding="10dp"
+				android:id="@+id/strEditText1"/>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="String To Ascii"
+			android:textAllCaps="false"
+			android:layout_weight="1.0"
+			android:onClick="sta"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Ascii To String"
+			android:textAllCaps="false"
+			android:layout_weight="1.0"
+			android:onClick="ats"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:background="@drawable/s_down">
+
+		<ScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<EditText
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:hint="Ascii"
+				android:gravity="top"
+				android:padding="10dp"
+				android:id="@+id/strEditText2"/>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>
+
